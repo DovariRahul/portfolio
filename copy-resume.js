@@ -6,9 +6,9 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const sourcePath = "C:\\Users\\D.RAHUL\\Downloads\\RAHUL-resume (1).pdf";
+const sourcePath = path.join(__dirname, 'Rahul_Resume_AI.pdf');
 const publicDir = path.join(__dirname, 'public');
-const destPath = path.join(publicDir, 'resume.pdf');
+const destPath = path.join(publicDir, 'Rahul_Resume_AI.pdf');
 
 console.log(`Checking source: ${sourcePath}`);
 if (!fs.existsSync(sourcePath)) {
